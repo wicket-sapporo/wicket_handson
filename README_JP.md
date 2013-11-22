@@ -16,3 +16,4 @@ wicket_handson
 
 1. ブラウザから http://localhost:8080/wicket_handson/ にアクセスし、「このページはWicketで動作しています」と画面に表示されることを確認してください。
 1. HandsOn.pdf の指示に従いながら、プログラミングを進めて下さい。なお、サンプルコードのpdfは、pdfディレクトリに格納されています。
+1. 模範解答は、[Masterブランチ](https://github.com/gishi-yama/wicket_handson/tree/master)にコミットしていますので、適宜参考にしてください。
