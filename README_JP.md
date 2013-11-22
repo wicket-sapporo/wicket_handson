@@ -1,4 +1,4 @@
-wicket_handson
+Wicket Handson
 ==============
 
 このプロジェクトは [Apache Wicket](http://wicket.apache.org/) の使い方を学習するためのハンズオン用のプロジェクトです。
