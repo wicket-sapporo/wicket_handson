@@ -6,5 +6,27 @@
 </head>
 <body>
 	<h1>このページはWicketで動作しています</h1>
+	<p wicket:id="label1">message is here.</p>
+		<dl>
+			<dt>基本編</dt>
+			<dd><a wicket:id="toFormPage">FormPageへ</a></dd>
+			<dd><a wicket:id="toListViewPage">ListViewPageへ</a></dd>
+			<dd><a wicket:id="toListViewTablePage">ListViewTablePageへ</a></dd>
+			<dd><a wicket:id="toDataViewPage">DataViewPageへ</a></dd>
+			<dd><a wicket:id="toNestedListViewPage">NestedListViewPageへ</a></dd>
+			<dt>いろいろなModel</dt>
+			<dd><a wicket:id="toCPModelFormPage">CompoundPropertyModelFormPageへ</a></dd>
+			<dd><a wicket:id="toROModelPage">ReadOnlyModelPageへ</a></dd>
+			<dd><a wicket:id="toModelFulListView">ModelFulListViewPageへ</a></dd>
+			<dt>入力チェック</dt>
+			<dd><a wicket:id="toValidationFormPage">ValidationFormPageへ</a></dd>
+			<dt>Bookmarkable（CleanURL）</dt>
+			<dd><a wicket:id="toParamSendPage">ParamSendPageへ</a></dd>
+			<dt>Session</dt>
+			<dd><a wicket:id="toSigninPage">SigninPageへ</a></dd>
+			<dd><a wicket:id="toSecurePage">認証せずに直接SecurePageへ</a></dd>
+			<dt>Ajax</dt>
+			<dd><a wicket:id="toVisibleChangePage">VisibleChangePageへ</a></dd>
+		</dl>
 </body>
 </html>
