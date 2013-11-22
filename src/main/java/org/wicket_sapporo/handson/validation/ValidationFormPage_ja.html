@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>ValidationFormPage</title>
+<style>
+<!--
+.feedbackPanelERROR {
+	color: red;
+}
+.feedbackPanelINFO {
+	color: green;
+}
+-->
+</style>
+</head>
+<body>
+	<h2>入力チェックを使った入力フォームを作る</h2>
+	<form wicket:id="form">
+		<div wicket:id="feedback"></div>
+		氏名 : <input type="text" wicket:id="name">
+		<div wicket:id="lunch"></div>
+		<button type="submit">データ送信</button>
+	</form>
+</body>
+</html>
