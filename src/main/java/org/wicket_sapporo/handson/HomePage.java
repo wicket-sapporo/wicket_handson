@@ -27,7 +27,7 @@ public class HomePage extends WebPage {
 	private static final long serialVersionUID = 1L;
 
 	public HomePage() {
-		String message = "こんにちは。今日は信州大にきています。";
+		String message = "こんにちは。今日は Wicket ハンズオンです。";
 
 		IModel<String> label1Model = new Model<>(message);
 
