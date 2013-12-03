@@ -1,16 +1,18 @@
 package org.wicket_sapporo.handson;
 
+import org.apache.wicket.core.request.mapper.MountedMapper;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
+import org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoder;
+import org.wicket_sapporo.handson.bookmarkable.ParamReceiptPage;
 
 /**
  * Application object for your web application. If you want to run this application without
  * deploying, run the Start class.
- * 
+ *
  * @see jp.ac.shinshu_u.Start#main(String[])
  */
-public class WicketApplication extends WebApplication
-{
+public class WicketApplication extends WebApplication {
 	/**
 	 * @see org.apache.wicket.Application#getHomePage()
 	 */
@@ -29,6 +31,8 @@ public class WicketApplication extends WebApplication
 		getRequestCycleSettings().setResponseRequestEncoding("UTF-8");
 		// Wicketに取り込まれるHTMLファイルのエンコード
 		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
+		// URLのマウント
+		mount(new MountedMapper("/param_receipt", ParamReceiptPage.class, new UrlPathPageParametersEncoder()));
 	}
 
 }
