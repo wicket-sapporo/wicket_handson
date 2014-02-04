@@ -4,7 +4,7 @@ import org.apache.wicket.RestartResponseException;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
-import org.apache.wicket.request.http.flow.AbortWithHttpErrorCodeException;
+import org.apache.wicket.model.Model;
 
 /**
  * ログイン後のサンプルページ.
@@ -16,7 +16,7 @@ public class SecurePage extends WebPage {
 	 * コンストラクタ.
 	 */
 	public SecurePage() {
-		add(new Label("userName", MySession.get().getUserName()));
+		add(new Label("userName", new Model<>(MySession.get().getUserName())));
 
 		add(new Link<Void>("logout") {
 			private static final long serialVersionUID = 237225927438109401L;
@@ -34,9 +34,9 @@ public class SecurePage extends WebPage {
 		super.onInitialize();
 		if (MySession.get().getUserName().equals("")) {
 			// ログインしていなければ、403エラーを返す
-			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
+//			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
 			// 強制的にページを転送するとき
-			// 　throw new RestartResponseException(SignInPage.class);
+			 throw new RestartResponseException(SignInPage.class);
 		}
 
 	}

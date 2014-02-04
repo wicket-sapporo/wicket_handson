@@ -36,6 +36,7 @@ public class WicketApplication extends WebApplication {
 		// Wicketに取り込まれるHTMLファイルのエンコード
 		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
 		// URLのマウント
+//		mount(new MountedMapper("/param_receipt", ParamReceiptPage.class));
 		mount(new MountedMapper("/param_receipt", ParamReceiptPage.class, new UrlPathPageParametersEncoder()));
 	}
 
