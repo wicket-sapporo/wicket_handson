@@ -41,11 +41,11 @@
 		</license>
 	</licenses>
 	<properties>
-		<junit.version>4.11</junit.version>
-		<wicket.version>6.19.0</wicket.version>
-		<jetty.version>8.1.16.v20140903</jetty.version>
+		<junit.version>4.12</junit.version>
+		<wicket.version>6.20.0</wicket.version>
+		<jetty.version>7.6.13.v20130916</jetty.version>
 		<log4j.version>1.2.17</log4j.version>
-		<slf4j.version>1.7.7</slf4j.version>
+		<slf4j.version>1.7.12</slf4j.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<dependencies>
@@ -96,6 +96,12 @@
 			<resource>
 				<filtering>false</filtering>
 				<directory>src/main/resources</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
 			</resource>
 			<resource>
 				<filtering>false</filtering>
@@ -112,6 +118,12 @@
 			<testResource>
 				<filtering>false</filtering>
 				<directory>src/test/resources</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
 			</testResource>
 			<testResource>
 				<filtering>false</filtering>
