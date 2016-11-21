@@ -8,10 +8,10 @@ Wicket Handson
 ## 動作確認方法
 
 1. IDEから、 `src/test/Start.java` を実行してください。
-1. ブラウザから http://localhost:8080/wicket_handson/ にアクセスし、「このページはWicketで動作しています」と画面に表示されることを確認してください。
-1. 動作確認ができたら、Start.java を停止してください。
+1. ブラウザから [http://localhost:8080/](http://localhost:8080/) にアクセスし、「このページはWicketで動作しています」と画面に表示されることを確認してください。
+1. 動作確認ができたら、 `Start.java` を停止してください。
 
 ## ハンズオンの進め方
 
-1. [HandsOn01.md](./doc/HandsOn01.md) の指示に従いながらプログラミングを進めて下さい。
-1. 模範解答は、[Masterブランチ](https://github.com/gishi-yama/wicket_handson/)にコミットしていますので、適宜参考にしてください。
+1. [HandsOn01.md](./doc/HandsOn01.md) から、指示に従いながらプログラミングと動作確認を進めて下さい。
+1. 模範解答は、[srcディレクトリ](./src/main/java)にコミットしていますので、適宜参考にしてください。
