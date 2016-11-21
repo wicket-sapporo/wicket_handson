@@ -13,5 +13,5 @@ Wicket Handson
 
 ## ハンズオンの進め方
 
-1. [HandsOn01.md](./doc/HandsOn.md) の指示に従いながらプログラミングを進めて下さい。
+1. [HandsOn01.md](./doc/HandsOn01.md) の指示に従いながらプログラミングを進めて下さい。
 1. 模範解答は、[Masterブランチ](https://github.com/gishi-yama/wicket_handson/)にコミットしていますので、適宜参考にしてください。
