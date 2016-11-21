@@ -41,7 +41,7 @@ public class HomePage extends WebPage {
 }
 ```
 
-アプリケーションを起動して、ブラウザでhttp://localhost:8080/ を表示し、動作を確認する。
+アプリケーションを起動して、ブラウザで `http://localhost:8080/` を表示し、動作を確認する。
 「こんにちは。今日は Wicket ハンズオンです。」というメッセージが表示されればOK。
 
 ![fig01](./fig01.png)
