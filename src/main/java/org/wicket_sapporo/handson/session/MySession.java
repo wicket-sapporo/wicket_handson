@@ -14,9 +14,8 @@ public class MySession extends WebSession {
 
 	/**
 	 * コンストラクタ.
-	 * 
-	 * @param request
-	 *          {@link Request}.
+	 *
+	 * @param request {@link Request}.
 	 */
 	public MySession(Request request) {
 		super(request);

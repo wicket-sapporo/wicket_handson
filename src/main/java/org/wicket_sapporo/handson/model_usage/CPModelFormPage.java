@@ -1,8 +1,5 @@
 package org.wicket_sapporo.handson.model_usage;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.RadioChoice;
@@ -11,6 +8,9 @@ import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.util.ListModel;
 import org.wicket_sapporo.handson.beans.UserLunch;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * CompoundPropertyModelを使って書き換えた FormPage.

@@ -1,8 +1,5 @@
 package org.wicket_sapporo.handson.model_usage;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -11,6 +8,9 @@ import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.wicket_sapporo.handson.beans.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * LoadableDetachableModel と CompoundPropertyModel を使って書き換えた ListViewTablePage.

@@ -21,9 +21,8 @@ public class ParamReceiptPage extends WebPage {
 
 	/**
 	 * コンストラクタ.
-	 * 
-	 * @param params
-	 *          クエリパラメータ.
+	 *
+	 * @param params クエリパラメータ.
 	 */
 	public ParamReceiptPage(PageParameters params) {
 		IModel<String> param1Model = Model.of("パラメータが送信されていません");

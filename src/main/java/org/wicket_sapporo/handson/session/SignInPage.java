@@ -22,8 +22,8 @@ public class SignInPage extends WebPage {
 	 * コンストラクタ.
 	 */
 	public SignInPage() {
-		userNameModel = new Model<>("");
-		passphraseModel = new Model<>("");
+		userNameModel = Model.of("");
+		passphraseModel = Model.of("");
 
 		StatelessForm<Void> form = new StatelessForm<Void>("form") {
 			private static final long serialVersionUID = 1L;

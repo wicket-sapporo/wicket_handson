@@ -1,8 +1,5 @@
 package org.wicket_sapporo.handson.basic;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.RadioChoice;
@@ -10,6 +7,9 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.util.ListModel;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 入力フォームのページの例.

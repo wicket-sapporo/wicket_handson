@@ -1,9 +1,5 @@
 package org.wicket_sapporo.handson.listView;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.navigation.paging.PagingNavigator;
@@ -15,6 +11,10 @@ import org.apache.wicket.markup.repeater.data.ListDataProvider;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.wicket_sapporo.handson.beans.User;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * いろいろな形式でリストを表示する（ページングして表示、列数を指定して表示）ページの例.
@@ -52,7 +52,7 @@ public class DataViewPage extends WebPage {
 
 			@Override
 			public IModel<User> model(User object) {
-				return new Model<>(object);
+				return Model.of(object);
 			}
 
 		};
@@ -63,10 +63,10 @@ public class DataViewPage extends WebPage {
 
 			@Override
 			protected void populateItem(Item<User> item) {
-				Label nameLabel = new Label("name", new Model<>(item.getModelObject().getName()));
+				Label nameLabel = new Label("name", Model.of(item.getModelObject().getName()));
 				item.add(nameLabel);
 
-				Label ageLabel = new Label("age", new Model<>(item.getModelObject().getAge()));
+				Label ageLabel = new Label("age", Model.of(item.getModelObject().getAge()));
 				item.add(ageLabel);
 			}
 		};
@@ -92,14 +92,14 @@ public class DataViewPage extends WebPage {
 			@Override
 			protected void populateEmptyItem(Item<User> item) {
 				// 空になってしまうセルの表示処理
-				Label nameLabel = new Label("name", new Model<>("---"));
+				Label nameLabel = new Label("name", Model.of("---"));
 				item.add(nameLabel);
 			}
 
 			@Override
 			protected void populateItem(Item<User> item) {
 				// 通常のセルの表示処理
-				Label nameLabel = new Label("name", new Model<>(item.getModelObject().getName()));
+				Label nameLabel = new Label("name", Model.of(item.getModelObject().getName()));
 				item.add(nameLabel);
 			}
 

@@ -11,7 +11,7 @@ public class CPModelConfirmationPage extends WebPage {
 
 	public CPModelConfirmationPage(IModel<UserLunch> model) {
 		// setDefaultModel(IModel) メソッドで、Modelをページにセットする
-		setDefaultModel(new CompoundPropertyModel<>(model));
+		setDefaultModel(CompoundPropertyModel.of(model));
 		add(new Label("name"));
 		add(new Label("lunch"));
 	}

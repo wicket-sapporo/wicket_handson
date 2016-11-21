@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
 <head>
-<meta charset="UTF-8" />
-<title>DataViewPage</title>
-<style>
-<!--
-th,td {
-	text-align: center;
-	border: solid thin black;
-}
--->
-</style>
+  <meta charset="UTF-8"/>
+  <title>DataViewPage</title>
+  <style>
+    <!--
+    th, td {
+      text-align: center;
+      border: solid thin black;
+    }
+
+    -->
+  </style>
 </head>
 <body>
-	<h2>リストを様々な形で表示する</h2>
-	<h3>テーブル形式で、表示する件数を指定</h3>
-	<table>
-		<tr>
-			<th>名前</th>
-			<th>年齢</th>
-		</tr>
-		<tr wicket:id="usersDateView">
-			<td wicket:id="name"></td>
-			<td wicket:id="age"></td>
-		</tr>
-	</table>
-	<div wicket:id="pgNav"></div>
-	<br />
-	<h3>テーブル形式で、列数を指定</h3>
-	<table>
-		<tr>
-			<th colspan="3">名前</th>
-		</tr>
-		<tr wicket:id="usersGridView">
-			<td wicket:id="cols"><span wicket:id="name"></span></td>
-		</tr>
-	</table>
+<h2>リストを様々な形で表示する</h2>
+<h3>テーブル形式で、表示する件数を指定</h3>
+<table>
+  <tr>
+    <th>名前</th>
+    <th>年齢</th>
+  </tr>
+  <tr wicket:id="usersDateView">
+    <td wicket:id="name"></td>
+    <td wicket:id="age"></td>
+  </tr>
+</table>
+<div wicket:id="pgNav"></div>
+<br/>
+<h3>テーブル形式で、列数を指定</h3>
+<table>
+  <tr>
+    <th colspan="3">名前</th>
+  </tr>
+  <tr wicket:id="usersGridView">
+    <td wicket:id="cols"><span wicket:id="name"></span></td>
+  </tr>
+</table>
 </body>
 </html>
