@@ -26,8 +26,8 @@ public class FormPage extends WebPage {
 	 * コンストラクタ.
 	 */
 	public FormPage() {
-		nameModel = new Model<>("");
-		lunchModel = new Model<>("");
+		nameModel = Model.of("");
+		lunchModel = Model.of("");
 
 		// Formタグ用の Form コンポーネント
 		Form<Void> form = new Form<Void>("form") {
