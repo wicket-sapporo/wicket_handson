@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org">
 <head>
-<meta charset="UTF-8" />
-<title>ModelUsingListViewPage</title>
-<style>
-<!--
-th,td {
-	text-align: center;
-	border: solid thin black;
-}
--->
-</style>
+  <meta charset="UTF-8"/>
+  <title>ModelUsingListViewPage</title>
+  <style>
+    <!--
+    th, td {
+      text-align: center;
+      border: solid thin black;
+    }
+
+    -->
+  </style>
 </head>
 <body>
-	<h2>ここまで学んだModelを使ってリストをTableタグで表示する</h2>
-	<table>
-		<tr>
-			<th>名前</th>
-			<th>性別</th>
-		</tr>
-		<tr wicket:id="users">
-			<td wicket:id="name"></td>
-			<td wicket:id="age"></td>
-		</tr>
-	</table>
+<h2>ここまで学んだModelを使ってリストをTableタグで表示する</h2>
+<table>
+  <tr>
+    <th>名前</th>
+    <th>性別</th>
+  </tr>
+  <tr wicket:id="users">
+    <td wicket:id="name"></td>
+    <td wicket:id="age"></td>
+  </tr>
+</table>
 </body>
 </html>

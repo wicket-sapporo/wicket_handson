@@ -12,11 +12,9 @@ public class ConfirmationPage extends WebPage {
 
 	/**
 	 * コンストラクタ.
-	 * 
-	 * @param nameModel
-	 *          入力された名前を格納したModel.
-	 * @param lunchModel
-	 *          選択された昼食メニューを格納したModel.
+	 *
+	 * @param nameModel  入力された名前を格納したModel.
+	 * @param lunchModel 選択された昼食メニューを格納したModel.
 	 */
 	public ConfirmationPage(IModel<String> nameModel, IModel<String> lunchModel) {
 

@@ -29,7 +29,7 @@ public class HomePage extends WebPage {
 	public HomePage() {
 		String message = "こんにちは。今日は Wicket ハンズオンです。";
 
-		IModel<String> label1Model = new Model<>(message);
+		IModel<String> label1Model = Model.of(message);
 
 		Label label1 = new Label("label1", label1Model);
 
@@ -137,7 +137,7 @@ public class HomePage extends WebPage {
 
 		// SignInPageはステートレスページにしているので、BookmarkablePageLinkで遷移させる
 		BookmarkablePageLink<Void> toSigninPageLink =
-				new BookmarkablePageLink<>("toSigninPage", SignInPage.class);
+			new BookmarkablePageLink<>("toSigninPage", SignInPage.class);
 		add(toSigninPageLink);
 
 		Link<Void> toSecurePageLink = new Link<Void>("toSecurePage") {

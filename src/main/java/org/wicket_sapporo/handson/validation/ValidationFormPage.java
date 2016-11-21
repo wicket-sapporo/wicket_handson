@@ -1,8 +1,5 @@
 package org.wicket_sapporo.handson.validation;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.RadioChoice;
@@ -13,6 +10,9 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.util.ListModel;
 import org.apache.wicket.validation.validator.StringValidator;
 import org.wicket_sapporo.handson.beans.UserLunch;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 入力チェックを加えた CPModelFormPage.

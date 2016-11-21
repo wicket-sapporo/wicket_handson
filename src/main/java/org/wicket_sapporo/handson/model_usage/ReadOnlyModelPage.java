@@ -1,12 +1,12 @@
 package org.wicket_sapporo.handson.model_usage;
 
-import java.util.Random;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.model.AbstractReadOnlyModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
+
+import java.util.Random;
 
 /**
  * AbstractReadOnlyModel, LoadableDetachableModel の動作ページの例.

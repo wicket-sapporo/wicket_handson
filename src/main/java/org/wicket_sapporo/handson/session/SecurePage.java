@@ -16,7 +16,7 @@ public class SecurePage extends WebPage {
 	 * コンストラクタ.
 	 */
 	public SecurePage() {
-		add(new Label("userName", new Model<>(MySession.get().getUserName())));
+		add(new Label("userName", Model.of(MySession.get().getUserName())));
 
 		add(new Link<Void>("logout") {
 			private static final long serialVersionUID = 237225927438109401L;
@@ -36,7 +36,7 @@ public class SecurePage extends WebPage {
 			// ログインしていなければ、403エラーを返す
 //			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
 			// 強制的にページを転送するとき
-			 throw new RestartResponseException(SignInPage.class);
+			throw new RestartResponseException(SignInPage.class);
 		}
 
 	}

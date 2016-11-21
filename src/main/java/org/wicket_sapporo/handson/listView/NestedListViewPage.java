@@ -1,9 +1,5 @@
 package org.wicket_sapporo.handson.listView;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.list.ListItem;
@@ -12,6 +8,10 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.util.ListModel;
 import org.wicket_sapporo.handson.beans.Header;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * ListViewの入れ子のページの例.
@@ -23,7 +23,7 @@ public class NestedListViewPage extends WebPage {
 	 * コンストラクタ.
 	 */
 	public NestedListViewPage() {
-		IModel<List<Header>> headersModel = new ListModel<>(getHeaders());
+		IModel<List<Header>> headersModel = Model.ofList(getHeaders());
 
 		ListView<Header> headersView = new ListView<Header>("headers", headersModel) {
 			private static final long serialVersionUID = -247097411283771277L;
@@ -31,12 +31,12 @@ public class NestedListViewPage extends WebPage {
 			@Override
 			protected void populateItem(ListItem<Header> item) {
 				Label headerNameLabel = new Label("headerName",
-						new Model<>(item.getModelObject().getHeaderName()));
+					Model.of(item.getModelObject().getHeaderName()));
 				item.add(headerNameLabel);
 
 				// ListView の中に ListView を作成し、入れ子状にして使う
 				ListView<String> subHeadersView = new ListView<String>("subHeaders",
-						new ListModel<>(item.getModelObject().getSubHeaders())) {
+					new ListModel<>(item.getModelObject().getSubHeaders())) {
 					private static final long serialVersionUID = 3203465500000911089L;
 
 					@Override

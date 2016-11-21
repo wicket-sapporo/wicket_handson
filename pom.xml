@@ -16,7 +16,7 @@
   limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
 >
 
   <modelVersion>4.0.0</modelVersion>
@@ -38,15 +38,15 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-	<properties>
-		<wicket.version>7.2.0</wicket.version>
-		<jetty9.version>9.2.13.v20150730</jetty9.version>
-		<log4j.version>2.5</log4j.version>
-		<junit.version>4.12</junit.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
-		<wtp.version>none</wtp.version>
-	</properties>
+  <properties>
+    <wicket.version>7.5.0</wicket.version>
+    <jetty9.version>9.2.19.v20160908</jetty9.version>
+    <log4j.version>2.5</log4j.version>
+    <junit.version>4.12</junit.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- allowed values: R7, 1.0, 1.5, 2.0 or none -->
+    <wtp.version>none</wtp.version>
+  </properties>
   <dependencies>
     <!-- WICKET DEPENDENCIES -->
     <dependency>
@@ -84,44 +84,26 @@
 
     <!-- JETTY DEPENDENCIES FOR TESTING -->
     <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-server</artifactId>
+      <groupId>org.eclipse.jetty.aggregate</groupId>
+      <artifactId>jetty-all</artifactId>
       <version>${jetty9.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-webapp</artifactId>
-      <version>${jetty9.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-util</artifactId>
-      <version>${jetty9.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-jmx</artifactId>
-      <version>${jetty9.version}</version>
-      <scope>test</scope>
+      <scope>provided</scope>
     </dependency>
 
     <!-- WebJars -->
     <dependency>
       <groupId>de.agilecoders.wicket.webjars</groupId>
       <artifactId>wicket-webjars</artifactId>
-      <version>0.5.3</version>
+      <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>bootstrap</artifactId>
-      <version>3.3.5</version>
+      <version>3.3.6</version>
       <exclusions>
         <exclusion>
           <groupId>org.webjars</groupId>
-            <artifactId>jquery</artifactId>
+          <artifactId>jquery</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -185,7 +167,9 @@
               <value>${project.build.directory}/test-classes</value>
             </systemProperty>
           </systemProperties>
-          <jettyXml>${project.basedir}/src/test/jetty/jetty.xml,${project.basedir}/src/test/jetty/jetty-ssl.xml,${project.basedir}/src/test/jetty/jetty-http.xml,${project.basedir}/src/test/jetty/jetty-https.xml</jettyXml>
+          <jettyXml>
+            ${project.basedir}/src/test/jetty/jetty.xml,${project.basedir}/src/test/jetty/jetty-ssl.xml,${project.basedir}/src/test/jetty/jetty-http.xml,${project.basedir}/src/test/jetty/jetty-https.xml
+          </jettyXml>
         </configuration>
       </plugin>
       <plugin>

@@ -15,7 +15,7 @@ public class ParamSendPage extends WebPage {
 	 */
 	public ParamSendPage() {
 		BookmarkablePageLink<Void> withoutParamLink =
-				new BookmarkablePageLink<>("withoutParamLink", ParamReceiptPage.class);
+			new BookmarkablePageLink<>("withoutParamLink", ParamReceiptPage.class);
 		add(withoutParamLink);
 
 		// 送信するパラメータを準備.
@@ -24,7 +24,7 @@ public class ParamSendPage extends WebPage {
 		pageParameters.add("param2", "2000");
 
 		BookmarkablePageLink<Void> withinParamLink =
-				new BookmarkablePageLink<>("withinParamLink", ParamReceiptPage.class, pageParameters);
+			new BookmarkablePageLink<>("withinParamLink", ParamReceiptPage.class, pageParameters);
 		add(withinParamLink);
 	}
 
