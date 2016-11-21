@@ -3,7 +3,7 @@ Wicket Handson
 
 このプロジェクトは [Apache Wicket](http://wicket.apache.org/) の使い方を学習するためのハンズオン用のプロジェクトです。
 
-このプロジェクトを実行するためには、Java8およびMaven3が動作する環境が必要です。
+このプロジェクトを実行するためには、Java8およびMavenが動作するIDE(IntelliJ, NetBeans, Eclipse...)が必要です。
 
 ## 動作確認方法
 
