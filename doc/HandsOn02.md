@@ -81,7 +81,7 @@ private static final long serialVersionUID = 1L;
 add(toFormPageLink);
 ```
 
-アプリケーションを再起動して、ブラウザで `http://localhost:8080/` から FormPage に移動して動作を確認する。
+アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  から FormPage に移動して動作を確認する。
 フォームに入力して送信した文字列がコンソールに表示されればOK。
 
 ![fig02](./fig02.png)

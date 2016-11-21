@@ -38,7 +38,7 @@ FormPage.javaのFormのonSubmit メソッドの内部に、以下のコードを
 System.out.println("launch : " + lunchModel.getObject());
 ```
 
-アプリケーションを再起動して、ブラウザで `http://localhost:8080/` から FormPage に移動し、動作を確認する。
+アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  から FormPage に移動し、動作を確認する。
 ラジオボタンが増え、フォームから送信した入力フォームとラジオボタンの文字列がそれぞれコンソールに選択表示されればOK。
 
 

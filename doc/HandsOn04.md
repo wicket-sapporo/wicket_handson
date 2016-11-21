@@ -46,7 +46,7 @@ FormPage.java の Form の onSubmit メソッド内に、以下のコードを�
 setResponsePage(new ConfirmationPage(nameModel, lunchModel));
 ```
 
-アプリケーションを再起動して、ブラウザで `http://localhost:8080/` からFormPageに移動し、動作を確認する。
+アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  からFormPageに移動し、動作を確認する。
 入力フォームから送信すると画面遷移し、送信した値が表示されればOK。
 
 ![fig04](./fig04.png)
