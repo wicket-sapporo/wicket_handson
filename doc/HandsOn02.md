@@ -46,7 +46,6 @@ public class FormPage extends WebPage {
 				// submit ボタンがクリックされた時の処理
 				super.onSubmit();
 				System.out.println("name : " + nameModel.getObject());
-				setResponsePage(new ConfirmationPage(nameModel));
 			}
 		};
 		add(form);
