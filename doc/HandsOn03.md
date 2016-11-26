@@ -15,11 +15,13 @@ private IModel<String> lunchModel;
 
 FormPage.java のコンストラクタに以下のコードを追加する。
 
-lunchModel 変数の初期化はnameModelの初期化の直後に、それ以外はTextField コンポーネントの下へ。
+lunchModel 変数の初期化はnameModelの初期化の直後に追加。
 
 ```java
-lunchModel = new Model<>("");
+lunchModel = Model.of("");
 ```
+
+TextField コンポーネントの下に追加。
 
 ```java
 // ラジオボタンの選択肢を準備
