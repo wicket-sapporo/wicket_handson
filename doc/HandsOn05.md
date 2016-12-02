@@ -1,3 +1,29 @@
+## 5. いろいろなコンポーネント（ListView）
+
+
+`org.wicket_sapporo.handson.basic.listView` パッケージに以下の2つのファイルを作る。
+
+ListViewPage.html
+
+```html
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ListViewPage</title>
+</head>
+<body>
+<h2>リストを表示する</h2>
+<ul>
+  <li wicket:id="prefectures"><span wicket:id="prefecture"></span></li>
+</ul>
+</body>
+</html>
+```
+
+ListViewPage.java
+
+```java
 package org.wicket_sapporo.handson.listView;
 
 import org.apache.wicket.markup.html.WebPage;
@@ -47,3 +73,12 @@ public class ListViewPage extends WebPage {
 	}
 
 }
+```
+
+**練習： [ハンズオン2](HandsOn02.md)の内容を思い出し、HomePage.htmlとHomePage.java を修正して、ListViewPage に移動できるようにしなさい。**
+
+ブラウザで http://localhost:8080/wicket_handson/ から ListViewPage に移動し、動作を確認する。
+􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  からFormPageに移動し、動作を確認する。
+入力フォームから送信すると画面遷移し、送信した値が表示されればOK。
+
+![fig05](./fig05.png)

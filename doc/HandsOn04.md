@@ -51,4 +51,4 @@ setResponsePage(new ConfirmationPage(nameModel, lunchModel));
 
 ![fig04](./fig04.png)
 
-<!-- [次へ](./HandsOn04.md) -->
+ [次へ](./HandsOn05.md) 
