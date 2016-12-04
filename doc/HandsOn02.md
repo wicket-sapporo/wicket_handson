@@ -1,5 +1,7 @@
 ## 2. Formを作る
 
+### 手順1
+
 `org.wicket_sapporo.handson.basic` パッケージに以下の2つのファイルを作る。
 
 FormPage.html
@@ -57,6 +59,8 @@ public class FormPage extends WebPage {
 }		
 ```
 
+### 手順2
+
 HomePage.htmlの body タグ内に以下を追加する。
 
 ```html
@@ -80,9 +84,13 @@ private static final long serialVersionUID = 1L;
 add(toFormPageLink);
 ```
 
+### 動作確認
+
 アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  から FormPage に移動して動作を確認する。
 フォームに入力して送信した文字列がコンソールに表示されればOK。
 
 ![fig02](./fig02.png)
 
-[次へ](./HandsOn03.md)
+----
+
+[ハンズオン3へ](./HandsOn03.md)

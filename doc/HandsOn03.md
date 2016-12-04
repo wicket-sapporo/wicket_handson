@@ -1,5 +1,7 @@
 ## 3. 入力フォームを増やす
 
+### 手順
+
 FormPage.htmlの `<input type='text'...` の下に、コードを追加する。
 
 ```html
@@ -40,10 +42,14 @@ FormPage.javaのFormのonSubmit メソッドの内部に、以下のコードを
 System.out.println("launch : " + lunchModel.getObject());
 ```
 
+### 動作確認
+
 アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  から FormPage に移動し、動作を確認する。
 ラジオボタンが増え、フォームから送信した入力フォームとラジオボタンの文字列がそれぞれコンソールに選択表示されればOK。
 
 
 ![fig03](./fig03.png)
 
-[次へ](./HandsOn04.md)
+----
+
+[ハンズオン4へ](./HandsOn04.md)

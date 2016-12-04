@@ -2,6 +2,8 @@
 
 ## 1.Wicket でWebページを作ってみる
 
+### 手順
+
 `org.wicket_sapporo.handson` パッケージに、以下のファイルを作る
 
 HomePage.html
@@ -41,9 +43,13 @@ public class HomePage extends WebPage {
 }
 ```
 
+### 動作確認
+
 アプリケーションを起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  を表示し、動作を確認する。
 「こんにちは。今日は Wicket ハンズオンです。」というメッセージが表示されればOK。
 
 ![fig01](./fig01.png)
 
-[次へ](./HandsOn02.md)
+----
+
+[ハンズオン2へ](./HandsOn02.md)

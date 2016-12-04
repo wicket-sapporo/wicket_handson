@@ -1,5 +1,7 @@
 ## 4. 確認ページを作ってみる
 
+### 手順1
+
 `org.wicket_sapporo.handson.basic` パッケージに以下の2つのファイルを作る。
 
 ConfirmationPage.html
@@ -40,6 +42,8 @@ public class ConfirmationPage extends WebPage {
 }
 ```
 
+### 手順2
+
 FormPage.java の Form の onSubmit メソッド内に、以下のコードを追加する。
 
 ```java
@@ -51,4 +55,6 @@ setResponsePage(new ConfirmationPage(nameModel, lunchModel));
 
 ![fig04](./fig04.png)
 
- [次へ](./HandsOn05.md) 
+----
+
+ [ハンズオン5へ](./HandsOn05.md) 
