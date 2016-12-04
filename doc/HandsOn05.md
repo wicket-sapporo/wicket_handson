@@ -78,13 +78,13 @@ public class ListViewPage extends WebPage {
 
 ### 手順2
 
-**練習： [ハンズオン2](HandsOn02.md)の内容を思い出し、HomePage.htmlとHomePage.java を修正して、ListViewPage に移動できるようにしなさい。**
+**練習： [ハンズオン2](HandsOn02.md)の内容を思い出し、HomePage.htmlとHomePage.javaを修正して、ListViewPageに移動できるリンクを追加しなさい。**
 
 ### 動作確認
 
-ブラウザで http://localhost:8080/wicket_handson/ から ListViewPage に移動し、動作を確認する。
-􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  からFormPageに移動し、動作を確認する。
-入力フォームから送信すると画面遷移し、送信した値が表示されればOK。
+􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  からListViewPageに移動し、動作を確認する。
+
+北海道, 青森, ... 福島が、箇条書きで表示されればOK。
 
 ![fig05](./fig05.png)
 
