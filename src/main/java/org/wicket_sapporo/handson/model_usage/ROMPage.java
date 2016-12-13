@@ -11,13 +11,13 @@ import java.util.Random;
 /**
  * AbstractReadOnlyModel, LoadableDetachableModel の動作ページの例.
  */
-public class ReadOnlyModelPage extends WebPage {
+public class ROMPage extends WebPage {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * コンストラクタ.
 	 */
-	public ReadOnlyModelPage() {
+	public ROMPage() {
 
 		IModel<Integer> aroModel = new AbstractReadOnlyModel<Integer>() {
 			private static final long serialVersionUID = 1L;

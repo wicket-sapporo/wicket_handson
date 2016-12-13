@@ -45,7 +45,7 @@ public class UserLunch implements Serializable {
 
 CPMFormPage.html（FormPage.htmlを複製する）
 
-CPModelFormPage.java
+CPMFormPage.java
 
 ```java
 package org.wicket_sapporo.handson.model_usage;
@@ -116,7 +116,7 @@ public class CPMFormPage extends WebPage {
 
 ### 手順4
 
-**練習： [ハンズオン4](HandsOn04.md)のように、選択内容を確認するページを作り、動作を確認しなさい。**
+**練習： [ハンズオン4](HandsOn04.md)のように、選択した送信内容を確認できるCPMConfirmationPageを作り、動作を確認しなさい。**
 
 完成したら、模範解答の[html](../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.html),[Java](../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.java)と見比べて、模範解答と同じように修正しなさい。
 

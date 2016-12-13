@@ -15,7 +15,7 @@ import org.wicket_sapporo.handson.listView.ListViewTablePage;
 import org.wicket_sapporo.handson.listView.NestedListViewPage;
 import org.wicket_sapporo.handson.model_usage.CPMFormPage;
 import org.wicket_sapporo.handson.model_usage.ModelfulListViewPage;
-import org.wicket_sapporo.handson.model_usage.ReadOnlyModelPage;
+import org.wicket_sapporo.handson.model_usage.ROMPage;
 import org.wicket_sapporo.handson.session.SecurePage;
 import org.wicket_sapporo.handson.session.SignInPage;
 import org.wicket_sapporo.handson.validation.ValidationFormPage;
@@ -95,12 +95,12 @@ public class HomePage extends WebPage {
 		};
 		add(toCPModelFormPageLink);
 
-		Link<Void> toROModelPageLink = new Link<Void>("toROModelPage") {
+		Link<Void> toROModelPageLink = new Link<Void>("toROMPage") {
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void onClick() {
-				setResponsePage(new ReadOnlyModelPage());
+				setResponsePage(new ROMPage());
 			}
 		};
 		add(toROModelPageLink);
