@@ -1,3 +1,4 @@
-## 8. いろいろなModel：CompoundPropertyModel
+## 8. いろいろなModel：AbstractReadOnlyModel
 
 ### 手順1
+
