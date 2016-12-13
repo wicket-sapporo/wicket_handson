@@ -2,6 +2,51 @@
 
 ### 手順1
 
+`org.wicket_sapporo.handson.beans` パッケージに以下のファイルを作る。
+
+User.java
+
+```java
+package org.wicket_sapporo.handson.beans;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	private String name;
+	private int age;
+
+	public User() {
+		this("", -1);
+	}
+
+	public User(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+}
+```
+
+### 手順2
+
 `org.wicket_sapporo.handson.listView` パッケージに以下のファイルを作る。
 
 ListViewTablePage.html
@@ -84,7 +129,7 @@ public class ListViewTablePage extends WebPage {
 
 ```
 
-### 手順2
+### 手順3
 
 **練習： HomePage.htmlとHomePage.java を修正して、ListViewTablePageに移動できるLinkを追加しなさい。**
 

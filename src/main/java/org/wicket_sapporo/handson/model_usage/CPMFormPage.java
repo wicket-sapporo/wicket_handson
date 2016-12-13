@@ -15,13 +15,13 @@ import java.util.List;
 /**
  * CompoundPropertyModelを使って書き換えた FormPage.
  */
-public class CPModelFormPage extends WebPage {
+public class CPMFormPage extends WebPage {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * コンストラクタ.
 	 */
-	public CPModelFormPage() {
+	public CPMFormPage() {
 		// wicket:idとUserLunchのフィールド変数を関連づける CompoundPropertyModel を準備
 		IModel<UserLunch> userLunchModel = new CompoundPropertyModel<>(new UserLunch());
 
@@ -34,7 +34,7 @@ public class CPModelFormPage extends WebPage {
 				super.onSubmit();
 				System.out.println("name : " + getModelObject().getName());
 				System.out.println("launch : " + getModelObject().getLunch());
-				setResponsePage(new CPModelConfirmationPage(getModel()));
+				setResponsePage(new CPMConfirmationPage(getModel()));
 			}
 		};
 		add(form);

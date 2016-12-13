@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 入力チェックを加えた CPModelFormPage.
+ * 入力チェックを加えた CPMFormPage.
  */
 public class ValidationFormPage extends WebPage {
 	private static final long serialVersionUID = 1L;

@@ -13,7 +13,7 @@ import org.wicket_sapporo.handson.listView.DataViewPage;
 import org.wicket_sapporo.handson.listView.ListViewPage;
 import org.wicket_sapporo.handson.listView.ListViewTablePage;
 import org.wicket_sapporo.handson.listView.NestedListViewPage;
-import org.wicket_sapporo.handson.model_usage.CPModelFormPage;
+import org.wicket_sapporo.handson.model_usage.CPMFormPage;
 import org.wicket_sapporo.handson.model_usage.ModelfulListViewPage;
 import org.wicket_sapporo.handson.model_usage.ReadOnlyModelPage;
 import org.wicket_sapporo.handson.session.SecurePage;
@@ -85,12 +85,12 @@ public class HomePage extends WebPage {
 		};
 		add(toNestedViewPageLink);
 
-		Link<Void> toCPModelFormPageLink = new Link<Void>("toCPModelFormPage") {
+		Link<Void> toCPModelFormPageLink = new Link<Void>("toCPMFormPage") {
 			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void onClick() {
-				setResponsePage(new CPModelFormPage());
+				setResponsePage(new CPMFormPage());
 			}
 		};
 		add(toCPModelFormPageLink);
