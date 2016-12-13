@@ -118,7 +118,7 @@ public class CPMFormPage extends WebPage {
 
 **練習： [ハンズオン4](HandsOn04.md)のように、選択内容を確認するページを作り、動作を確認しなさい。**
 
-完成したら、模範解答（[../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.java]）(../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.java)と見比べて、模範解答と同じように修正しなさい。
+完成したら、[模範解答](../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.java)と見比べて、模範解答と同じように修正しなさい。
 
 ----
 
