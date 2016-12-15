@@ -115,6 +115,9 @@ public class ROMPage extends WebPage {
 - AbstractReadOnlyModelは、コンポーネントが値を取り出す度に `getObject()` が実行される
 - LoadableDetachableModelは、コンポーネントが最初に値を取り出した時に `load()` の実行結果を一時保存し、画面が表示される度に更新される
 
+
+![fig08](./fig08.png)
+
 ----
 
 [ハンズオン9へ](./HandsOn09.md)

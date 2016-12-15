@@ -145,6 +145,8 @@ RangeValidator.minimum='${label}' は ${minimum} 以下にしてくださいね.
 
 いろいろな値を入れてみて、エラー文が表示される事を確認する。
 
+![fig10](./fig10.png)
+
 ----
 
 [ハンズオン11へ](./HandsOn11.md)

@@ -114,6 +114,9 @@ public class ParamReceiptPage extends WebPage {
 
 パラメータありのリンクをクリックすることで、ParamReceiptPageに移動し、**URLの末尾にパラメータ（?param1=...）が表記されている**ことを確認する。
 
+
+![fig11a](./fig11a.png)
+
 ### 手順3
 
 WicketApplicationのinitメソッドに、MoutedMaperを追加する。
@@ -127,3 +130,9 @@ mount(new MountedMapper("/param_receipt", ParamReceiptPage.class, new UrlPathPag
 􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  からParamSendPageに移動し、動作を確認する。
 
 パラメータなし・パラメータありのリンクで、**URLのファイルパス部が手順3で指定したものになっている**ことを確認する。
+
+![fig11b](./fig11b.png)
+
+----
+
+[HandsOn12](HandsOn12.md)
