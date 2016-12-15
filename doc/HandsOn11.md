@@ -1,4 +1,4 @@
-## Bookmarkable（URLの固定）
+## 11. BookmarkableとCleanURL（URLの固定）
 
 ### 手順1
 
@@ -119,10 +119,19 @@ public class ParamReceiptPage extends WebPage {
 
 ### 手順3
 
-WicketApplicationのinitメソッドに、MoutedMaperを追加する。
+WicketApplicationクラスのinitメソッドに、MoutedMaperを追加する。
 
 ```java
-mount(new MountedMapper("/param_receipt", ParamReceiptPage.class, new UrlPathPageParametersEncoder()));
+	@Override
+	public void init() {
+		super.init();
+		// サーバ・クライアント間のリクエスト・レスポンスの文字エンコード
+		getRequestCycleSettings().setResponseRequestEncoding("UTF-8");
+		// Wicketに取り込まれるHTMLファイルのエンコード
+		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
+		// URLのマウント
+		mount(new MountedMapper("/param_receipt", ParamReceiptPage.class, new UrlPathPageParametersEncoder()));
+	}
 ```
 
 ### 動作確認2

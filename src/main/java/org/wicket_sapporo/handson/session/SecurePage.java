@@ -5,6 +5,7 @@ import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.Model;
+import org.apache.wicket.request.http.flow.AbortWithHttpErrorCodeException;
 
 /**
  * ログイン後のサンプルページ.
@@ -34,9 +35,8 @@ public class SecurePage extends WebPage {
 		super.onInitialize();
 		if (MySession.get().getUserName().equals("")) {
 			// ログインしていなければ、403エラーを返す
-//			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
-			// 強制的にページを転送するとき
-			throw new RestartResponseException(SignInPage.class);
+			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
+
 		}
 
 	}

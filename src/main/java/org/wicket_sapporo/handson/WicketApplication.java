@@ -9,6 +9,7 @@ import org.apache.wicket.request.Response;
 import org.apache.wicket.request.mapper.parameter.UrlPathPageParametersEncoder;
 import org.wicket_sapporo.handson.bookmarkable.ParamReceiptPage;
 import org.wicket_sapporo.handson.session.MySession;
+import org.wicket_sapporo.handson.session.SignInPage;
 
 /**
  * Application object for your web application. If you want to run this application without
@@ -36,7 +37,7 @@ public class WicketApplication extends WebApplication {
 		// Wicketに取り込まれるHTMLファイルのエンコード
 		getMarkupSettings().setDefaultMarkupEncoding("UTF-8");
 		// URLのマウント
-//		mount(new MountedMapper("/param_receipt", ParamReceiptPage.class));
+		mount(new MountedMapper("/signin", SignInPage.class, new UrlPathPageParametersEncoder()));
 		mount(new MountedMapper("/param_receipt", ParamReceiptPage.class, new UrlPathPageParametersEncoder()));
 	}
 
