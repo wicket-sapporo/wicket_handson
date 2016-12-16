@@ -36,9 +36,9 @@ public class SecurePage extends WebPage {
 		if (MySession.get().getUserName().equals("")) {
 			// ログインしていなければ、403エラーを返す
 			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
-
+			// 強制的にページを転送するとき
+			// throw new RestartResponseException(SignInPage.class);
 		}
-
 	}
 
 }

@@ -173,22 +173,97 @@ public class SecurePage extends WebPage {
 	protected void onInitialize() {
 		super.onInitialize();
 		if (MySession.get().getUserName().equals("")) {
-			// 強制的にページを転送するとき
-			throw new RestartResponseException(SignInPage.class);
+			// ログインしていなければ、403エラーを返す
+			throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
 		}
-
 	}
-
 }
 ```
 
 ### 手順2
 
-WicketApplicationクラスのinitメソッドの中に、MoutedMaperを追加する。
+WicketApplicationクラスのinitメソッドのオーバーライドの中に、MoutedMaperを追加する。
+
+```java
+@Override
+public void init() {
+  // -- 省略 --
+  mount(new MountedMapper("/signin", SignInPage.class, new UrlPathPageParametersEncoder()));
+}
+```
+
+WicketApplicationクラスのnewSessionメソッドをオーバーライドの中に、MｙSessionを利用するように設定する。
+
+（メソッドが無い場合は作成する）
+
+```java
+@Override
+public Session newSession(Request request, Response response) {
+	// 独自に拡張したSessionの利用
+	return new MySession(request);
+}
+```
+
+### 手順3
+
+HomePage.htmlに、以下のタグを追記する。（ddタグなどでラップしてもよい）
+
+```html
+<a wicket:id="toSigninPage">SigninPageへ</a>
+<a wicket:id="toSecurePage">認証せずに直接SecurePageへ</a>
+```
+
+HomePage.javaに、リンクを追加する
+
+```java
+// SignInPageはステートレスページにしているので、BookmarkablePageLinkで遷移させる
+BookmarkablePageLink<Void> toSigninPageLink =
+  new BookmarkablePageLink<>("toSigninPage", SignInPage.class);
+add(toSigninPageLink);
+
+Link<Void> toSecurePageLink = new Link<Void>("toSecurePage") {
+  private static final long serialVersionUID = 1L;
+
+  @Override
+  public void onClick() {
+    setResponsePage(new SecurePage());
+  }
+};
+add(toSecurePageLink);
+```
+
+### 動作確認1
+
+􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  から上記2つのリンクを使い、動作を確認する。
+
+- 「SigninPageへ」のリンクをクリックすることで、SignInPageに移動する。ユーザ名は適当、パスワードは `1234` にすることでSecurePageにログインできる。  
+また、ログイン後にログアウトできる。
+- ログインしていない状態で「認証せずに直接SecurePageへ」のリンクをクリックすると、403エラーの画面が表示される。
+
+### 手順4
+
+SecurePageのonInitializerメソッドの内容を次のように書き換える。
 
 ```java
 	@Override
-	public Session newSession(Request request, Response response) {
-		return new MySession(request);
+	protected void onInitialize() {
+		super.onInitialize();
+		if (MySession.get().getUserName().equals("")) {
+			// ログインしていなければ、403エラーを返す
+			// throw new AbortWithHttpErrorCodeException(403, "Forbidden! You must be login!");
+			// 強制的にページを転送するとき
+			throw new RestartResponseException(SignInPage.class);
+		}
 	}
 ```
+
+### 動作確認2
+
+􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  から上記2つのリンクを使い、動作を確認する。
+
+- ログインしていない状態で「認証せずに直接SecurePageへ」のリンクをクリックすると、SignInPageの画面が表示される。
+
+----
+
+[HandsOn13](HandsOn13.md)
+
