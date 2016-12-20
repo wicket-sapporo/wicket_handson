@@ -133,7 +133,9 @@ form.lunch=メニュー
 RangeValidator.minimum='${label}' は ${minimum} 以下にしてくださいね.
 ```
 
-※eclipseの人はPropertyEditorを入れた方がいいかも [公式サイト](http://propedit.osdn.jp/), [Eclipse Market Place](https://marketplace.eclipse.org/content/properties-editor)
+※Eclipseでpropertiesファイルの内容や表示が文字化けする人は、PropertyEditor（[公式サイト](http://propedit.osdn.jp/), [Eclipse Market Place](https://marketplace.eclipse.org/content/properties-editor)）を入れる。  
+インストールしてEclipseを再起動し、.propertiesファイルを右クリック > アプリケーションから開く > プロパティー・エディタ を選択する。  
+プロパティー・エディタで内容を保存し直す。
 
 ### 手順2
 
