@@ -27,17 +27,17 @@ ConfirmationPage.java
 
 ```java
 package org.wicket_sapporo.handson.basic;
- 
+
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.model.IModel;
- 
+
 public class ConfirmationPage extends WebPage {
   private static final long serialVersionUID = 1L;
 
   public ConfirmationPage(IModel<String> nameModel, IModel<String> lunchModel) {
- 
+
      // 練習の内容を満たすように自分で書いてみてください。
- 
+
    }
 }
 ```
@@ -54,8 +54,13 @@ setResponsePage(new ConfirmationPage(nameModel, lunchModel));
 
 入力フォームから送信すると画面遷移し、送信した値が表示されればOK。
 
+![fig03a](./fig03a.png)
+
+↓入力し、データ送信ボタンをクリック
+
 ![fig04](./fig04.png)
+
 
 ----
 
- [ハンズオン5へ](./HandsOn05.md) 
+ [ハンズオン5へ](./HandsOn05.md)

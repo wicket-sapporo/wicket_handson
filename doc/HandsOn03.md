@@ -49,7 +49,11 @@ System.out.println("launch : " + lunchModel.getObject());
 ラジオボタンが増え、フォームから送信した入力フォームとラジオボタンの文字列がそれぞれコンソールに選択表示されればOK。
 
 
-![fig03](./fig03.png)
+![fig03a](./fig03a.png)
+
+↓入力し、データ送信ボタンをクリック
+
+![fig03b](./fig03b.png)
 
 ----
 
