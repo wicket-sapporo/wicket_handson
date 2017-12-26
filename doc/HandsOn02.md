@@ -52,7 +52,7 @@ public class FormPage extends WebPage {
 		};
 		add(form);
 
-		// name を入力する input tyepe="text" 用のコンポーネント
+		// name を入力する input type="text" 用のコンポーネント
 		TextField<String> nameField = new TextField<>("name", nameModel);
 		form.add(nameField);
 	}
