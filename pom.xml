@@ -20,7 +20,7 @@
 >
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.wicket_sapporo</groupId>
+  <groupId>com.example</groupId>
   <artifactId>wicket_handson</artifactId>
   <packaging>war</packaging>
   <version>7.x</version>
@@ -39,7 +39,7 @@
     </license>
   </licenses>
   <properties>
-    <wicket.version>7.9.0</wicket.version>
+    <wicket.version>7.10.0</wicket.version>
     <jetty9.version>9.2.19.v20160908</jetty9.version>
     <log4j.version>2.7</log4j.version>
     <junit.version>4.12</junit.version>

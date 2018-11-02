@@ -2,7 +2,7 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.model_usage` パッケージに以下のファイルを作る。
+`com.example.model_usage` パッケージに以下のファイルを作る。
 
 ROMPage.html
 
@@ -32,7 +32,7 @@ ROMPage.html
 ROMPage.java
 
 ```java
-package org.wicket_sapporo.handson.model_usage;
+package com.example.model_usage;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;

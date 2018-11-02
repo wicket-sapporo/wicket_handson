@@ -2,7 +2,7 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.bookmarkable` パッケージに、下の4ファイルを作成する。
+`com.example.bookmarkable` パッケージに、下の4ファイルを作成する。
 
 ParamSendPage.html
 
@@ -24,7 +24,7 @@ ParamSendPage.html
 ParamSendPage.java
 
 ```java
-package org.wicket_sapporo.handson.bookmarkable;
+package com.example.bookmarkable;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
@@ -72,7 +72,7 @@ ParamReceiptPage.html
 ParamReceiptPage.java
 
 ```java
-package org.wicket_sapporo.handson.bookmarkable;
+package com.example.bookmarkable;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;

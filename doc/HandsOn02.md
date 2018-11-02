@@ -2,7 +2,7 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.basic` パッケージに以下の2つのファイルを作る。
+`com.example.basic` パッケージに以下の2つのファイルを作る。
 
 FormPage.html
 

@@ -2,12 +2,12 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.beans` パッケージに以下のファイルを作る。
+`com.example.beans` パッケージに以下のファイルを作る。
 
 User.java
 
 ```java
-package org.wicket_sapporo.handson.beans;
+package com.example.beans;
 
 import java.io.Serializable;
 
@@ -47,7 +47,7 @@ public class User implements Serializable {
 
 ### 手順2
 
-`org.wicket_sapporo.handson.listView` パッケージに以下のファイルを作る。
+`com.example.listView` パッケージに以下のファイルを作る。
 
 ListViewTablePage.html
 
@@ -88,7 +88,7 @@ ListViewTablePage.java
 **練習： [ハンズオン5](HandsOn05.md)の内容を思い出し、getUsersメソッドの戻り値がHTMLのwicket:id(users, name, age)を使って表示されるように修正せよ。􏰀**
 
 ```java
-package org.wicket_sapporo.handson.listView;
+package com.example.listView;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
@@ -96,7 +96,7 @@ import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
-import org.wicket_sapporo.handson.beans.User;
+import com.example.beans.User;
 
 import java.util.ArrayList;
 import java.util.List;

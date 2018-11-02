@@ -2,10 +2,10 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.beans` パッケージに以下のファイルを作る。
+`com.example.beans` パッケージに以下のファイルを作る。
 
 ```java
-package org.wicket_sapporo.handson.beans;
+package com.example.beans;
 
 import java.io.Serializable;
 
@@ -41,14 +41,14 @@ public class UserLunch implements Serializable {
 
 ### 手順2
 
-`org.wicket_sapporo.handson.model_usage` パッケージに以下のファイルを作る。
+`com.example.model_usage` パッケージに以下のファイルを作る。
 
 CPMFormPage.html（FormPage.htmlを複製する）
 
 CPMFormPage.java
 
 ```java
-package org.wicket_sapporo.handson.model_usage;
+package com.example.model_usage;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
@@ -57,7 +57,7 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.util.ListModel;
-import org.wicket_sapporo.handson.beans.UserLunch;
+import com.example.beans.UserLunch;
 
 import java.util.Arrays;
 import java.util.List;
@@ -118,7 +118,7 @@ public class CPMFormPage extends WebPage {
 
 **練習： [ハンズオン4](HandsOn04.md)のように、選択した送信内容を確認できるCPMConfirmationPageを作り、動作を確認しなさい。**
 
-完成したら、模範解答の[html](../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.html),[Java](../src/main/java/org/wicket_sapporo/handson/model_usage/CPMConfirmationPage.java)と見比べて、模範解答と同じように修正しなさい。
+完成したら、模範解答の[html](../src/main/java/com/example/model_usage/CPMConfirmationPage.html),[Java](../src/main/java/com/example/model_usage/CPMConfirmationPage.java)と見比べて、模範解答と同じように修正しなさい。
 
 ----
 

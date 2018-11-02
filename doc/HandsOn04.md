@@ -2,7 +2,7 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.basic` パッケージに以下の2つのファイルを作る。
+`com.example.basic` パッケージに以下の2つのファイルを作る。
 
 ConfirmationPage.html
 
@@ -26,7 +26,7 @@ ConfirmationPage.java
 **練習： nameModel, lunchModelの内容が表示されるページになるように修正しなさい。**
 
 ```java
-package org.wicket_sapporo.handson.basic;
+package com.example.basic;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.model.IModel;

@@ -4,7 +4,7 @@
 
 ### 手順
 
-`org.wicket_sapporo.handson` パッケージに、以下のファイルを作る
+`com.example` パッケージに、以下のファイルを作る
 
 HomePage.html
 
@@ -25,7 +25,7 @@ HomePage.html
 HomePage.java
 
 ```java
-package org.wicket_sapporo.handson;
+package com.example;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.model.IModel;

@@ -2,12 +2,12 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.session` パッケージに以下の 5 つのファイルを作成する
+`com.example.session` パッケージに以下の 5 つのファイルを作成する
 
 MySession.java
 
 ```java
-package org.wicket_sapporo.handson.session;
+package com.example.session;
 
 import org.apache.wicket.Session;
 import org.apache.wicket.protocol.http.WebSession;
@@ -79,7 +79,7 @@ SignInPage.html
 SignInPage.java
 
 ```java
-package org.wicket_sapporo.handson.session;
+package com.example.session;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.PasswordTextField;
@@ -144,7 +144,7 @@ SecurePage.html
 SecurePage.java
 
 ```java
-package org.wicket_sapporo.handson.session;
+package com.example.session;
 
 import org.apache.wicket.RestartResponseException;
 import org.apache.wicket.markup.html.WebPage;

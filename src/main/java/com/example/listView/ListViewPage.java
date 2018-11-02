@@ -1,30 +1,3 @@
-## 5. いろいろなコンポーネント（ListView）
-
-### 手順1
-
-`com.example.basic.listView` パッケージに以下の2つのファイルを作る。
-
-ListViewPage.html
-
-```html
-<!DOCTYPE html>
-<html xmlns:wicket="http://wicket.apache.org">
-<head>
-  <meta charset="UTF-8">
-  <title>ListViewPage</title>
-</head>
-<body>
-<h2>リストを表示する</h2>
-<ul>
-  <li wicket:id="prefectures"><span wicket:id="prefecture"></span></li>
-</ul>
-</body>
-</html>
-```
-
-ListViewPage.java
-
-```java
 package com.example.listView;
 
 import org.apache.wicket.markup.html.WebPage;
@@ -74,20 +47,3 @@ public class ListViewPage extends WebPage {
 	}
 
 }
-```
-
-### 手順2
-
-**練習： [ハンズオン2](HandsOn02.md)の内容を思い出し、HomePage.htmlとHomePage.javaを修正して、ListViewPageに移動できるリンクを追加しなさい。**
-
-### 動作確認
-
-􏰘􏰙􏰒􏰏􏰚􏰎􏰛􏰁􏰑􏰜􏰝􏰉􏰊􏰞􏰟􏰈􏰐􏰌􏰓􏰠􏰠􏰄􏰍􏰡􏰀アプリケーションを再起動して、ブラウザで [http://localhost:8080/](http://localhost:8080/)  からListViewPageに移動し、動作を確認する。
-
-北海道, 青森, ... 福島が、箇条書きで表示されればOK。
-
-![fig05](./fig05.png)
-
-----
-
-[ハンズオン6へ](./HandsOn06.md)

@@ -2,7 +2,7 @@
 
 ### 手順1
 
-`org.wicket_sapporo.handson.model_usage` パッケージに以下のファイルを作成する。
+`com.example.model_usage` パッケージに以下のファイルを作成する。
 
  ModelfulListViewPage.html(ListViewTablePage.html の内容をコピーする) 
  
@@ -10,7 +10,7 @@
  
 ### 手順2
  
-**練習： `org.wicket_sapporo.handson.listView` パッケージに作成した ListViewTablePage.java をベースとして、以下の条件を満たすように ModelfulListViewPage.java を作成しなさい。**
+**練習： `com.example.listView` パッケージに作成した ListViewTablePage.java をベースとして、以下の条件を満たすように ModelfulListViewPage.java を作成しなさい。**
 
 1. getUsers メソッドの呼び出しに LoadableDetachableModel を使う
 2. ListView#populateItem() メソッドで各ユーザのデータを表示する部分に CompoundPropertyModel を使う
